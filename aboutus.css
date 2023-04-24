@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0
+    box-sizing: border-box;
+    
+  }
+  :root{
+   
+    --padding-inline-section: 10px;
+    --primary-text-color: #F8EBD6;
+    --secondary-text-color: #79C376 ;
+    --accent-color: #BFA130;
+    --accent-color-dark: #A48927;
+    
+    --background-color: #010101;
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+
+  }
+  body{
+    font-family: 'poppins',sans-serif;
+    color: var(--primary-text-color);
+    background-color: #010101;
+    height: 100%;
+    
+  }
+  h1{
+    font-size: 2em;
+    font-weight: bold;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-start: 0.67em;
+    margin-inline-end: 0px;
+    margin-inline-start: 0px;
+
+  }
+  
+  h2{
+    font-size: 2rem;
+  
+    
+  }
+  h3{
+    font-size: 1.5rem;
+    color: #A48927;
+  }
+  p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-colordary-);
+    line-height: 1.8rem;
+  }
+  
+  a{
+    text-decoration: none;
+    display: inline-block;
+    
+  }
+  
+  ul{
+     list-style: none;
+  
+  }
+  main{
+    display: block;
+    height: 100%;
+  }
+  /*utility*/
+  .container{
+  
+    max-width: 1000px;  /*1100  width of container,we given this size to container ki size can get small but not larger than 1180 */
+    margin-inline:  auto;    /* to give left right margin ,auto diya toh container will be in center */
+    padding-inline: var(--padding-inline-section);
+  
+  }
+  .flex{
+    display: flex;
+    align-items: center;
+  
+  
+  }
+  .hover-links{
+    color: var(--secondary-text-color);
+    transition: 0.2s es;
+  }
+  .hover-links:hover{
+    color: var(--accent-color);/*--accent-color*/;
+  }
+  
+  .hover-links1{
+    color: var(--background-color);
+    transition: 0.2s es;
+  }
+  
+  .hover-links1:hover{
+    color: #2E4F4F;/*--accent-color*/;
+  }
+  
+  .primary-button{
+    background-color: #A48927;
+    
+    border-radius: 6px;
+    font-weight: 600;
+    color:white !important; /*like a tags ko balck rakha hai par humko chahiye ki signup white rahe*/
+    padding: 12px 22px;/* box ka size increase hua*/
+    box-shadow: 0 0 2px var(--background-color);
+    transition: 0.2s ease-out;
+  
+  }
+  .primary-button:hover{
+    background-color:#79C376;
+  }
+  
+  .secondary-button{
+     border: 0.5px solid var(--secondary-text-color);
+     color:  white;
+     font-weight: 600;
+     padding: 12px 22px;
+     border-radius: 6px;
+     transition: 0.2s ease-out;
+  }
+  
+  .secondary-button:hover{
+     border-color: var(--accent-color);
+     color: var(--accent-color) !important;
+  
+  
+  }
+  .main-nav{
+    margin-top: 3px;
+    /*background-color: aquamarine;*/
+    justify-content: space-between;  /* space between logo and nav links*/
+  }
+  
+  .company-logo img{
+    width: 100px;
+    border-radius: 5px;
+  }
+  
+  .nav-links{
+    flex-basis: 730px;  /* can define the width of flex*/
+  }
+  
+  .nav-links ul{
+    justify-content: end;
+    gap: 40px;  /*gap between nav links*/
+  }
+/*   --footer--  */
+
+footer{
+  padding-block: 80px;
+  background-color: black;
+}
+
+.links-column{
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px; /*gap b/w overview pricing*/
+}
+
+.footer-container{
+  align-items: flex-start;
+  justify-content: space-between;
+}
+  .subfooter{
+    background-color: #A48927;
+    padding: var(--padding-inline-section);
+    bottom: 0;
+    
+    position: relative;/*maine absolute rakha tha main ke bitch mai dikh raha tha relative karnese bottom hogaya
+    */
+    width: 100%;
+  }
+  
+  .subfooter-container{
+    justify-content: center;
+    gap: 30px;
+  }
+
+ /**/
+  .container-1{
+    flex-direction: row;
+    width: 90%;
+   margin-inline: auto;
+  }
+  .text-container{
+    padding: 100px 40px 200px 0px;
+    margin: 10px;
+    text-align: justify;
+    
+    margin: 0px 0px 16px;
+    width:80%;
+
+  }
+  .image-container img{
+    height:300px;
+    border-radius: 5px;
+  }
+  .container-2{
+    flex-direction: row;
+    width: 90%;
+   margin-inline: auto;
+   gap: 20px;
+  }
+  .text-container2{
+    padding: 100px 40px 200px 0px;
+    margin: 10px;
+    text-align: justify;
+    
+    margin: 0px 0px 16px;
+    width:80%;
+
+  }
+  .image-container2 img{
+    height:300px;
+    border-radius: 5px;
+  }

@@ -1,0 +1,138 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'jost' , sans-serif;
+    background: linear-gradient(to bottom /*, #191825*/,#000000,#181823,#18122B,#191825,#18122B,#251B37,#372948,#393053,#443C68);
+}
+.main{
+    width: 350px;
+    height: 525px;/*aready have account overlap karra tha toh height increase ki*/
+    background: red;
+    overflow: hidden;
+    background: url("") no-repeat center/cover;
+    border-radius: 10px;
+    box-shadow: 5px 20px 50px black;
+}
+
+#chk{
+    display: none;
+}
+.signup{
+    
+    position:relative;
+    width: 100%;
+    height: 100% ;
+    text-align: center;/*select option center mai aya*/
+}
+
+  
+
+.mb-3 select{
+    color: grey;
+    border-radius: 5px;
+}
+
+
+label{
+    color: #fff;
+    font-size: 2.3rem;
+    justify-content: center ;
+    display: flex ;
+    margin: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+
+}
+ input{
+    width: 60%;
+    height: 20px;
+    background: white;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+ }
+
+ button{
+    width: 60%;
+    height: 40px;
+    margin: 10px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: black ;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+
+ }
+
+ button:hover{
+    background: #443C68;
+ }
+
+ .signin{
+    text-align: center;
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+ }
+ .signin label{
+    color: #18122B;
+    transform: scale(.6);
+ }
+.secondary a{
+   
+    margin-left: 20%;
+   
+   
+}
+/*.signup button{
+   cursor: pointer;
+   transition: .5s ease-in-out;
+}*/
+
+.secondary{
+    /*border: 0.5px solid /*var(--secondary-text-color)*/
+    color: white;
+    flex-direction:row-reverse;
+    align-items: center;
+    font-weight: 500;
+    /*padding: 12px 24px;*/
+    max-height: 80%;
+    /*border-radius: 6px;*/
+    transition: 0.2s ease-out;
+
+ }
+ 
+
+ #chk:checked ~ .signin{
+    transform: translateY(-500px);
+
+ }
+
+#chk:checked ~ .signin label{
+   transform: scale(1);
+}
+#chk:checked ~ .signup label{
+  transform: scale(.6);
+
+}

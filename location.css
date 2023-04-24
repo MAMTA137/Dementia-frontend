@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+  }
+  :root{
+   
+    --padding-inline-section: 10px;
+    --primary-text-color: #F8EBD6;
+    --secondary-text-color: #79C376 ;
+    --accent-color: #BFA130;
+    --accent-color-dark: #A48927;
+    
+    --background-color: #010101;
+  }
+  body{
+    font-family: 'poppins',sans-serif;
+    color: var(--primary-text-color);
+    background-color: #010101;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  
+  h2{
+    font-size: 3rem;
+  
+    
+  }
+  h2{
+  
+    font-size: 1.5rem;
+  }
+  p{
+    
+    font-family: 'Roboto',sans-serif;
+    font-size: 1rem;
+    color: var(--secondary-text-colordary-);
+    line-height: 1.8rem;
+  }
+  
+  a{
+    text-decoration: none;
+    display: inline-block;
+    
+  }
+  
+  ul{
+     list-style: none;
+  
+  }
+  /*utility*/
+  .container{
+  
+    max-width: 1000px;  /*1100  width of container,we given this size to container ki size can get small but not larger than 1180 */
+    margin-inline:  auto;    /* to give left right margin ,auto diya toh container will be in center */
+    padding-inline: var(--padding-inline-section);
+  
+  }
+  .flex{
+    display: flex;
+    align-items: center;
+  
+  }
+  .text{
+    margin-top: 20px;
+  }
+  .hover-links{
+    color: var(--primary-text-color);
+    transition: 0.2s es;
+  }
+  .hover-links:hover{
+    color: var(--accent-color);/*--accent-color*/;
+  }
+  
+  .hover-links1{
+    color: var(--background-color);
+    transition: 0.2s es;
+  }
+  
+  .hover-links1:hover{
+    color: #2E4F4F;/*--accent-color*/;
+  }
+  
+  .primary-button{
+    background-color:#A48927 ;
+    
+    border-radius: 6px;
+    font-weight: 600;
+    color:white !important; /*like a tags ko balck rakha hai par humko chahiye ki signup white rahe*/
+    padding: 12px 22px;/* box ka size increase hua*/
+    box-shadow: 0 0 2px var(--background-color);
+    transition: 0.2s ease-out;
+  
+  }
+  .primary-button:hover{
+    background-color: #79C376 ; /*palevioletred*/
+  }
+  
+  .secondary-button{
+     border: 0.5px solid var(--secondary-text-color);
+     color:  white;
+     font-weight: 600;
+     padding: 12px 22px;
+     border-radius: 6px;
+     transition: 0.2s ease-out;
+  }
+  
+  .secondary-button:hover{
+     border-color: var(--accent-color);
+     color: var(--accent-color) !important;
+  
+  
+  }
+  .main-nav{
+    margin-top: 3px;
+    /*background-color: aquamarine;*/
+    justify-content: space-between;  /* space between logo and nav links*/
+  }
+  
+  .company-logo img{
+    width: 100px;
+    border-radius: 5px;
+  }
+  
+  .nav-links{
+    flex-basis: 730px;  /* can define the width of flex*/
+  }
+  
+  .nav-links ul{
+    justify-content: end;
+    gap: 40px;  /*gap between nav links*/
+  }
+  .subfooter{
+    background-color: #A48927;
+    padding: var(--padding-inline-section);
+    bottom: 0;
+    width: 100%;
+    position:absolute;
+  }
+  
+  .subfooter-container{
+    justify-content: center;
+    gap: 30px;
+  }
+ .btn-btn-primary{
+    color: black;
+    border-color: aliceblue;
+    border-width: 3px;
+    margin-left: 37.5%;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 10px;
+    background-color: #A48927;
+    height: 50px;
+    width: 25%;
+    font-size: 1rem;
+
+ }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="location.css">
+</head>
+<body>
+    <nav>
+        <div class="container main-nav flex">  <!--given flex class and we defined properties in css,flex se left right divide karpate hai-->
+            <a href="" class="company-logo">   <!--will make ankertag so it can be hovered-->
+                <img src="static\edited.svg"  alt="company-logo">  <!--when want images in background will go to css......    also if you want ki image 
+                ki size ko change karsako to image html mai dalneka and size css mai define kar sakte hoo  also one more option class mai style banao,image daloa and 
+            style karo-->
+                
+            </a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li><a href="#" class="hover-links">Home</a></li>
+                    <li><a href="#" class="hover-links">Community</a></li>
+                    <li><a href="#" class="hover-links">About us</a></li>
+                   
+                    <li><a href="#" class="hover-links secondary-button">sign.in</a></li>
+                    <li><a href="#" class="hover-links primary-button">sign up</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+    </nav>
+    <div class="container form-container">
+        <div class="main">
+            <div class="text">
+                <h1>Please Click on this Button to Share your Live Location</h1>
+             </div>
+           <form action="/locationshare" method="post">
+             
+                <div>
+                 <button type="submit" class="btn-btn-primary">Share your live location</button>
+                </div>
+                </form>
+        </div>
+        
+    </div>
+    <div class="subfooter">
+        <div class="container flex subfooter-container">
+            <a class="hover-links1" href="">Privacy Policy</a>
+            <a class="hover-links1" href="">Terms and conditions</a>
+            <a class="hover-links1" href="">Security Information</a>
+            <a class="hover-links1" href=""><i class="fa-brands fa-facebook"></i></a>
+            <a class="hover-links1" href=""><i class="fa-brands fa-twitter"> </i></a>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/8263f3c691.js" crossorigin="anonymous"></script>  
+</body>
+</html>
